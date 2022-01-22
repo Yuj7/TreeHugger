@@ -39,7 +39,7 @@
   <body>
     <div id="grid-container">
       <div id="game-container">
-        <div id="timer"></div>  
+        <div id="timer"></div>
         <h1>Tree Cutter</h1>
         <p class="center-text">Tree Clicked: <span id= "counter">0</span></p>
         <img src = "tree.jpg" id = "tree" style= "width:150 px" onclick = "increment()">
@@ -51,40 +51,10 @@
         <img src = "axe.jpg" id = "axe" style= "width:40px;height:40px"  onclick = "addaxe()">
       </div>
       <div class="upgrade-container-4">
-        
+
     </div>
   </body>
-    <script>
-        var axecounter = 1;
-        var clicks = 0;
-        function increment(){
-            clicks+=axecounter;
-            counter.innerHTML = clicks;
-        }
-        function addaxe(){
-          if (clicks>=10){
-            clicks = clicks-10;
-          counter.innerHTML = clicks;
-          axecounter = axecounter+1;
-          }
-          "upgrade-container-4"
-
-        }
-        var timerVar = setInterval(countTimer, 1000);
-        var totalSeconds = 0;
-        function countTimer() {
-           ++totalSeconds;
-           var hour = Math.floor(totalSeconds /3600);
-           var minute = Math.floor((totalSeconds - hour*3600)/60);
-           var seconds = totalSeconds - (hour*3600 + minute*60);
-           if(hour < 10)
-             hour = "0"+hour;
-           if(minute < 10)
-             minute = "0"+minute;
-           if(seconds < 10)
-             seconds = "0"+seconds;
-           document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
-        }
+    <script type = "text/javascript" src="index.js">
     </script>
   </body>
 </html>
