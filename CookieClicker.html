@@ -1,0 +1,15 @@
+<html>
+    <body>
+            <h1>Cookie Clicker</h1>
+            <The purpose of our website is a tree cutter game.</p>
+            <img src = "tree.jpg" id = "tree" style= "width:150 px" onclick = "increment()">             
+            <p>Tree Clicked: <span id= "counter">0</span></p>
+            </body>
+            <script>
+                var clicks = 0;
+                function increment(){
+                    clicks = clicks+1;
+                    counter.innerHTML = clicks;
+                }
+            </script>
+</html>
