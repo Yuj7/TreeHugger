@@ -1,6 +1,8 @@
 let axecounter = 1;
+let clickCounter = 1;
 let clicks = 0;
 let chainsawcounter=0;
+let total = 0;
 
 const quotes = ["Love is like a tree, it grows of its own accord, it puts down deep roots into our whole being. -Victor Hugo",
 "You know me, I think there ought to be a big old tree right there. And let's give him a friend. Everybody needs a friend. -Bob Ross",
@@ -10,6 +12,8 @@ const quotes = ["Love is like a tree, it grows of its own accord, it puts down d
 function increment(){
     clicks+=axecounter;
     counter.innerHTML = clicks;
+    total += clickCounter;
+    totalClicks.innerHTML = total;
 
     //var x = event.clientX;
     //var y = event.clientY;
@@ -65,7 +69,7 @@ let chainsawincrement = setInterval(plus1score,1000);
 function plus1score(){
   clicks=clicks+chainsawcounter;
   counter.innerHTML=clicks;
-  document.getElementById("chainsaw2").innerHTML = chainsawcounter+"clicks per second"
+  document.getElementById("chainsaw2").innerHTML = chainsawcounter+" clicks per second"
 }
 
 function countTimer() {
