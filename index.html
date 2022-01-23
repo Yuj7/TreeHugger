@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <style media="screen">
+
+    body {
+      background-image: url("Assets/Wood for background.jpg");
+      background-size: 100vh 100vh;
+    }
+
     #grid-container {
       display: grid;
       grid-template-columns: 2fr 3fr;
@@ -13,6 +19,7 @@
       border: solid 2px black;
       grid-row-start: 1;
       grid-row-end: 4;
+      background-color: rgba(255, 255, 255, 1);
     }
 
     .text-container {
@@ -31,6 +38,14 @@
       text-align: center;
     }
 
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      width: 50%;
+    }
+
   </style>
   <head>
     <meta charset="utf-8">
@@ -41,9 +56,9 @@
       <div id="game-container">
         <div id="timer"></div>
         <div id="chainsaw2"></div>
-        <h1>Tree Cutter</h1>
-        <p class="center-text">Tree Clicked: <span id= "counter">0</span></p>
-        <img src = "tree.jpg" id = "tree" style= "width:150 px" onclick = "increment()">
+        <h1>Hey Chuck! How Much Wood Can You Cut?</h1>
+        <p class="center-text">Wood: <span id= "counter">0</span></p>
+        <img src = "Assets/TreeArt.png" id = "tree" style= "width:150px" class ="center-image" onclick = "increment()">
       </div>
       <div class="text-container">
         Container 2
