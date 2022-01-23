@@ -50,4 +50,7 @@ function countTimer() {
 
   }
 
+  let useCicks = 0;
+  document.addEventListener('click', clickCo)
+
 
