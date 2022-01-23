@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+#game-container {
+  font-family: Rye;
+  background: white;
+  text-align: center;
+}
+
+.text-container {
+  background: white;
+}
+
+.store-container {
+  background: white;
+}
+
+.upgrade-container-4 {
+  background: white;
+}
+/*# sourceMappingURL=main.css.map */
