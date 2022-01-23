@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <style media="screen">
+
+    body {
+      background-image: url("Assets/Wood for background.jpg");
+      background-size: 100vh 100vh;
+    }
+
     #grid-container {
       display: grid;
       grid-template-columns: 2fr 3fr;
@@ -13,6 +19,7 @@
       border: solid 2px black;
       grid-row-start: 1;
       grid-row-end: 4;
+      background-color: rgba(255, 255, 255, 1);
     }
 
     .text-container {
@@ -31,6 +38,14 @@
       text-align: center;
     }
 
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      width: 50%;
+    }
+
   </style>
   <head>
     <meta charset="utf-8">
@@ -39,26 +54,24 @@
   <body>
     <div id="grid-container">
       <div id="game-container">
-        <h1>Cookie Clicker</h1>
-        <p class="center-text">Tree Clicked: <span id= "counter">0</span></p>
-        <img src = "tree.jpg" id = "tree" style= "width:150 px" onclick = "increment()">
+        <div id="timer"></div>
+        <div id="chainsaw2"></div>
+        <h1>Hey Chuck! How Much Wood Can You Cut?</h1>
+        <p class="center-text">Wood: <span id= "counter">0</span></p>
+        <img src = "Assets/TreeArt.png" id = "tree" style= "width:150px" class ="center-image" onclick = "increment()">
       </div>
       <div class="text-container">
         Container 2
       </div>
       <div class="store-container">
-        Container 3
+        <img src = "axe.jpg" id = "axe" style= "width:100px;height:100px"   onclick = "addaxe()">
+        <img src = "Chainsaw.png" id = "chainsaw" style="width:100px;height:100px"  onclick = "addchainsaw()">
       </div>
       <div class="upgrade-container-4">
-        Container 4
+
     </div>
   </body>
-    <script>
-        var clicks = 0;
-        function increment(){
-            clicks = clicks+1;
-            counter.innerHTML = clicks;
-        }
+    <script type = "text/javascript" src="index.js">
     </script>
   </body>
 </html>
