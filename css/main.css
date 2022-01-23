@@ -2,12 +2,11 @@
 #game-container {
   position: relative;
   font-family: Rye;
-  background: white;
   text-align: center;
 }
 
 .text-container {
-  background: white;
+
   font-family: Rye;
 }
 

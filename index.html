@@ -11,22 +11,23 @@
     #grid-container {
       display: grid;
       grid-template-columns: 2fr 3fr;
-      grid-auto-rows: minmax(150px, auto);
+      grid-auto-rows: minmax(20vh, auto);
       grid-gap: 15px;
     }
 
     #game-container {
-      box-sizing: border-box;
+      background-image: url("Assets/Background Game.png");
+      background-size: 100% 100%;
       border: solid 2px black;
       grid-row-start: 1;
       grid-row-end: 4;
-      background-color: rgba(255, 255, 255, 1);
     }
 
     .text-container {
+      background-image: url("Assets/Clouds.jpg");
+      background-size: 100% 100%;
       border: solid 2px black;
-      color: black;
-      text-align: center;
+
       padding: 70px 0;
     }
 
@@ -42,10 +43,14 @@
       text-align: center;
     }
 
+    .bottom-text-vertical {
+      vertical-align: text-bottom;
+    }
+
     .center-image {
       display: block;
       margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto;
       margin-bottom: 0;
       width: 50%;
     }
@@ -68,10 +73,10 @@
     <div id="grid-container">
       <div id="game-container">
         <div id="timer"></div>
-        
+
         <h1>Hey Chuck! How Much Wood Can You Cut?</h1>
         <p class="center-text">Wood: <span id= "counter">0</span></p>
-        
+
 
         <img src = "Assets/TreeArt.png" id = "tree" style= "width:150px" class ="center-image" onclick = "increment()">
         <div class="box">
@@ -79,10 +84,10 @@
           <p>Total clicks: <span id="totalClicks">0</span></p>
           
         </div>
-        
+
       </div>
       <div class="text-container">
-          <p class="center-text"><span id= "quote"> "Someone's sitting in the shade today because someone planted a tree a long time ago.-Warren Buffett"</span></p>
+          <p class="center-text bottom-text-vertical"><span id= "quote"> "Someone's sitting in the shade today because someone planted a tree a long time ago.-Warren Buffett"</span></p>
       </div>
       <div class="store-container">
         <div class="store-label">
