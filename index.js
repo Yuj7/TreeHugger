@@ -1,7 +1,6 @@
-let axecounter = 1;
-let clickCounter = 1;
+let totalcounter = 1;
 let clicks = 0;
-let chainsawcounter=0;
+let clickCounter = 1;
 let total = 0;
 
 const quotes = ["Love is like a tree, it grows of its own accord, it puts down deep roots into our whole being. -Victor Hugo",
@@ -10,7 +9,7 @@ const quotes = ["Love is like a tree, it grows of its own accord, it puts down d
 
 // On click increment 
 function increment(){
-    clicks+=axecounter;
+    clicks+=totalcounter;
     counter.innerHTML = clicks;
     total += clickCounter;
     totalClicks.innerHTML = total;
@@ -38,25 +37,89 @@ function increment(){
 }
 
 
-
+let saxecounter = 1;
 
 // First axe upgrade
-function addaxe(){
+function addsaxe(){
   if (clicks>=10){
     clicks = clicks-10;
   counter.innerHTML = clicks;
-  axecounter = axecounter+1;
-  aLevel.innerHTML = axecounter;
+  saxecounter = saxecounter + 1;
+  totalcounter = saxecounter;
+  aLevel.innerHTML = "Silver " + saxecounter;
   }
   "upgrade-container-4"
 }
-function addchainsaw(){
-  if (clicks>=20){
-    clicks =clicks-20;
-    counter.innerHTML = clicks;
-    chainsawcounter=chainsawcounter+1;
-    cLevel.innerHTML = chainsawcounter;
+
+let taxecounter = 0;
+// Second axe upgrade
+
+function addtaxe(){
+  if (clicks>=50){
+    clicks = clicks-50;
+  counter.innerHTML = clicks;
+  taxecounter = taxecounter + 1;
+  totalcounter = taxecounter + 3 ;
+  aLevel.innerHTML = "Tungsten " + (taxecounter);
   }
+  "upgrade-container-4"
+}
+
+let daxecounter = 0;
+// Third axe upgrade
+
+function adddaxe(){
+  if (clicks>=100){
+    clicks = clicks-100;
+  counter.innerHTML = clicks;
+  daxecounter = daxecounter + 1;
+  totalcounter = daxecounter + 5 ;
+  aLevel.innerHTML = "Diamond " + (daxecounter);
+  }
+  "upgrade-container-4"
+}
+
+let schainsawcounter = 1;
+// First chainsaw upgrade
+
+function addschainsaw(){
+  if (clicks>= 200){
+    clicks =clicks-200;
+    counter.innerHTML = clicks;
+    schainsawcounter=schainsawcounter+1;
+    totalcounter = schainsawcounter + 10 ;
+    cLevel.innerHTML = "Shark " + (schainsawcounter);
+  }
+  "upgrade-container-4"
+}
+
+let cchainsawcounter = 1;
+// Second chainsaw upgrade
+
+function addcchainsaw(){
+  if (clicks>=500){
+    clicks =clicks-500;
+    counter.innerHTML = clicks;
+    cchainsawcounter=cchainsawcounter+1;
+    totalcounter = cchainsawcounter + 15 ;
+    cLevel.innerHTML = "Crystal " + (cchainsawcounter);
+  }
+  "upgrade-container-4"
+}
+
+let fchainsawcounter = 1;
+// Third chainsaw upgrade
+
+
+function addfchainsaw(){
+  if (clicks>=1000){
+    clicks =clicks-1000;
+    counter.innerHTML = clicks;
+    fchainsawcounter=fchainsawcounter+1;
+    totalcounter = fchainsawcounter + 25 ;
+    cLevel.innerHTML = "Flame " + (fchainsawcounter);
+  }
+  "upgrade-container-4"
 }
 
 
