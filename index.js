@@ -1,6 +1,6 @@
 let axecounter = 1;
 let clicks = 0;
-
+let chainsawcounter=0;
 // On click increment 
 function increment(){
     clicks+=axecounter;
@@ -16,10 +16,23 @@ function addaxe(){
   }
   "upgrade-container-4"
 }
+function addchainsaw(){
+  if (clicks>=100){
+    clicks =clicks-100;
+    counter.innerHTML = clicks;
+    chainsawcounter=chainsawcounter+1;
+  }
+}
 
 // Timer
 let timerVar = setInterval(countTimer, 1000);
 let totalSeconds = 0;
+let chainsawincrement = setInterval(plus1score,1000);
+function plus1score(){
+  clicks=clicks+chainsawcounter;
+  counter.innerHTML=clicks;
+  document.getElementById("chainsaw2").innerHTML = chainsawcounter+"clicks per second"
+}
 function countTimer() {
    ++totalSeconds;
    let hour = Math.floor(totalSeconds /3600);
@@ -32,4 +45,9 @@ function countTimer() {
    if(seconds < 10)
      seconds = "0"+seconds;
    document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
-}
+
+  
+
+  }
+
+
