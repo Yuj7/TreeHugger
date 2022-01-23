@@ -5,6 +5,7 @@
     body {
       background-image: url("Assets/Wood for background.jpg");
       background-size: 100vh 100vh;
+
     }
 
     #grid-container {
@@ -24,6 +25,9 @@
 
     .text-container {
       border: solid 2px black;
+      color: white;
+      text-align: center;
+      padding: 70px 0;
     }
 
     .store-container {
@@ -41,9 +45,16 @@
     .center-image {
       display: block;
       margin-left: auto;
-      margin-right: auto;
+      margin-right: auto; 
       margin-bottom: 0;
       width: 50%;
+    }
+
+    .upgradeimage{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
     }
 
   </style>
@@ -52,24 +63,30 @@
     <title></title>
   </head>
   <body>
+
     <div id="grid-container">
       <div id="game-container">
         <div id="timer"></div>
         <div id="chainsaw2"></div>
         <h1>Hey Chuck! How Much Wood Can You Cut?</h1>
         <p class="center-text">Wood: <span id= "counter">0</span></p>
+        
+
         <img src = "Assets/TreeArt.png" id = "tree" style= "width:150px" class ="center-image" onclick = "increment()">
       </div>
       <div class="text-container">
-        Container 2
+          <p class="center-text"><span id= "quote"> "Someone's sitting in the shade today because someone planted a tree a long time ago.-Warren Buffett"</span></p>
       </div>
       <div class="store-container">
-        <img src = "axe.jpg" id = "axe" style= "width:100px;height:100px"   onclick = "addaxe()">
-        <img src = "Chainsaw.png" id = "chainsaw" style="width:100px;height:100px"  onclick = "addchainsaw()">
+        <!-- <p id="demo"></p>
+        //<div class= "animation-screen" id="x"></div> -->
+        <img src = "axe.jpg" id = "axe" class= "upgradeimage" style= "width:100px;height:100px"   onclick = "addaxe()">
+        <img src = "Chainsaw.png" id = "chainsaw" class= "upgradeimage" style="width:100px;height:100px"  onclick = "addchainsaw()">
       </div>
       <div class="upgrade-container-4">
-
-    </div>
+        <p> Axe Level: <span id="aLevel"> 0 </span></p>
+        <p> Chainsaw Level: <span id="cLevel">0</span></p>
+      </div>
   </body>
     <script type = "text/javascript" src="index.js">
     </script>
