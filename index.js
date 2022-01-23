@@ -59,7 +59,7 @@ function addtaxe(){
     clicks = clicks-50;
   counter.innerHTML = clicks;
   taxecounter = taxecounter + 1;
-  totalcounter = taxecounter + 3 ;
+  totalcounter = taxecounter*3 ;
   aLevel.innerHTML = "Tungsten " + (taxecounter);
   }
   "upgrade-container-4"
@@ -73,13 +73,13 @@ function adddaxe(){
     clicks = clicks-100;
   counter.innerHTML = clicks;
   daxecounter = daxecounter + 1;
-  totalcounter = daxecounter + 5 ;
+  totalcounter = daxecounter*5 ;
   aLevel.innerHTML = "Diamond " + (daxecounter);
   }
   "upgrade-container-4"
 }
 
-let schainsawcounter = 1;
+let schainsawcounter = 0;
 // First chainsaw upgrade
 
 function addschainsaw(){
@@ -87,13 +87,13 @@ function addschainsaw(){
     clicks =clicks-200;
     counter.innerHTML = clicks;
     schainsawcounter=schainsawcounter+1;
-    totalcounter = schainsawcounter + 10 ;
+    chainsawcounter = schainsawcounter*1  ;
     cLevel.innerHTML = "Shark " + (schainsawcounter);
   }
   "upgrade-container-4"
 }
 
-let cchainsawcounter = 1;
+let cchainsawcounter = 0;
 // Second chainsaw upgrade
 
 function addcchainsaw(){
@@ -101,13 +101,13 @@ function addcchainsaw(){
     clicks =clicks-500;
     counter.innerHTML = clicks;
     cchainsawcounter=cchainsawcounter+1;
-    totalcounter = cchainsawcounter + 15 ;
+    chainsawcounter = cchainsawcounter*3 ;
     cLevel.innerHTML = "Crystal " + (cchainsawcounter);
   }
   "upgrade-container-4"
 }
 
-let fchainsawcounter = 1;
+let fchainsawcounter = 0;
 // Third chainsaw upgrade
 
 
@@ -116,7 +116,7 @@ function addfchainsaw(){
     clicks =clicks-1000;
     counter.innerHTML = clicks;
     fchainsawcounter=fchainsawcounter+1;
-    totalcounter = fchainsawcounter + 25 ;
+    chainsawcounter = fchainsawcounter*10 ;
     cLevel.innerHTML = "Flame " + (fchainsawcounter);
   }
   "upgrade-container-4"
